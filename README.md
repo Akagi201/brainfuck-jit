@@ -2,10 +2,13 @@
 
 A toy brainfuck jit compiler
 
-## Brainfuck Interpreter
+## Run
 
 ```bash
-cargo run --bin bf_inter data/helloworld.bf
+cargo build --release
+./target/release/bf_inter data/mandelbrot.bf # slow
+./target/release/bf_ir data/mandelbrot.bf    # faster
+./target/release/bf_jit data/mandelbrot.bf   # fastest, only can run on MacOS and Linux
 ```
 
 ## Brainfuck visualizer

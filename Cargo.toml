@@ -8,4 +8,15 @@ default-run = "bf_inter"
 name = "bf_inter"
 path = "src/bf_inter.rs"
 
+[[bin]]
+name = "bf_ir"
+path = "src/bf_ir.rs"
+
+[[bin]]
+name = "bf_jit"
+path = "src/bf_jit.rs"
+
 [dependencies]
+dynasm = "1.2.1"
+dynasmrt = "1.2.1"
+itertools = "0.10.3"
